@@ -1,3 +1,46 @@
+:root {
+  /* Blue Colors */
+  --shimmering-sky: #c2d9ff;
+  --ocean-blue: #3887be;
+  --midnight-indigo: #38419d;
+  --columbia-blue: #bdd5ea;
+  --sapphire: #0353a4;
+  --oxford-blue: #061a40;
+
+  /* Indigo & Purple Colors */
+  --soft-indigo: #8e8ffa;
+  --vivid-lavender: #7752fe;
+  --lilac-dream: #865dff;
+  --sapphire-twilight: #6d67e4;
+
+  /* Deep & Dark Colors */
+  --deep-night: #190482;
+  --twilight-magenta: #200e3a;
+  --dark-burgundy: #4c0027;
+  --berry-wine: #750550;
+
+  /* Pink & Fuchsia Colors */
+  --mystic-pink: #e384ff;
+  --fuchsia-bliss: #980f5a;
+  --coral-red: #e63e6d;
+  --ruby-rose: #b42b51;
+
+  /* Turquoise Color */
+  --turquoise-splash: #52d3d8;
+
+  /* White & Black Colors */
+  --ghost-white: #f7f7ff;
+  --void: #0f111e;
+  --abyss: #0e101e;
+  --dark-navy: #010730;
+
+  /* Border Witdhs*/
+  --border-heavy: 0.65rem;
+  --border-medium: 0.4rem;
+  --border-light: 0.22rem;
+  --border-super-light: 0.16rem;
+}
+
 /* UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING */
 
 * {
@@ -5,10 +48,16 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+
+  font-family: "Raleway", "Montserrat", sans-serif;
+
+  color: white;
 }
 
 body {
-  background-color: lightblue;
+  background: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   padding: 1rem;
 }
@@ -16,34 +65,47 @@ body {
 /* NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR */
 
 nav {
-  background-color: lightcyan;
+  background-color: var(--berry-wine);
 
   padding: 1rem;
   margin: 1rem;
+  padding-right: 2rem;
+
+  border: 0.45rem solid var(--coral-red);
+  border-radius: 3rem;
 }
 
 nav .navigation-list {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: flex-end;
-
-  padding: 1rem;
-  margin: 1rem;
 }
 
 nav .navigation-list button {
-  background-color: lightgreen;
+  background-color: var(--dark-burgundy);
   padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 
-  padding: 1rem;
-  margin: 1rem;
+  border: 0.35rem solid var(--coral-red);
+  border-radius: 3rem;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navigation-list button span {
+  margin-right: 1rem;
 }
 
 /* LANDING DOCK LANDING DOCK LANDING DOCK LANDING DOCK LANDING DOCK */
 
 .hero {
-  background-color: lightgoldenrodyellow;
+  background-color: var(--berry-wine);
 
   display: flex;
   flex-direction: row;
@@ -52,62 +114,95 @@ nav .navigation-list button {
 
   padding: 1rem;
   margin: 1rem;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 3rem;
 }
 
 .hero .description {
-  background-color: lightsalmon;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./assets/hero_background.png);
+  background-size: cover;
 
   flex: 2;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
-  padding: 1rem;
+  padding: 3rem;
   margin: 1rem;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
+
+  font-size: 1.3rem;
 }
 
 .hero .headshot {
   background-color: lightseagreen;
   flex: 1;
 
-  background: url(./assets/headshot.png);
-  background-size: contain;
+  background: url(./assets/profile_placeholder.png);
+  background-size: cover;
+
+  height: 25rem;
+  width: auto;
 
   padding: 1rem;
   margin: 1rem;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
 }
 
 /* SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK */
 
 .skillset-container {
-  background-color: lightgreen;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./assets/skills_background.png);
+  background-size: contain;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
 
   display: flex;
   flex-direction: row;
 
   padding: 1rem;
   margin: 1rem;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 3rem;
 }
 
 .skillset-container .header {
-  background-color: lightskyblue;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./assets/skills_header_background.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
 
-  padding: 1rem;
   margin: 1rem;
 
   display: flex;
-  flex-direction: row;
-
   justify-content: center;
   align-items: center;
+  text-align: center;
+  text-shadow: 0.5rem 0.25rem 1rem #0e101e;
+
+  font-size: 1.4rem;
+  word-wrap: break-word;
+  max-width: fit-content;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
 }
 
 .skillset-container .skillset-list {
-  background-color: lightskyblue;
+  background-color: var(--dark-burgundy);
 
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem;
 
   display: flex;
@@ -115,12 +210,17 @@ nav .navigation-list button {
   gap: 1rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
 }
 
 .skillset-container .skillset-list .skill-mini-card {
-  background-color: lightcoral;
+  background-color: var(--fuchsia-bliss);
 
-  padding: 1rem;
+  padding: 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
 
   display: flex;
   flex-direction: row;
@@ -128,26 +228,35 @@ nav .navigation-list button {
   flex: 1;
   justify-content: center;
   align-items: center;
+
+  border: 0.45rem solid var(--coral-red);
+  border-radius: 3rem;
+}
+
+.skillset-container .skillset-list .skill-mini-card h1 {
+  font-size: 1.6rem;
 }
 
 .skillset-container .skillset-list .skill-mini-card span {
+  margin-left: 0.3rem;
+}
+
+.skill-logo-representation img {
+  width: 1.85rem;
+  height: auto;
+
   background-color: white;
 
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
+
+  border: 0.25rem solid var(--coral-red);
+  border-radius: 5rem;
 }
 
 /* PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO */
 
 .past-work-container {
-  background-color: lightpink;
-
-  padding: 1rem;
-  margin: 1rem;
-}
-
-.past-work-container .past-work-list {
-  background-color: lightskyblue;
+  background-color: var(--dark-burgundy);
 
   padding: 1rem;
   margin: 1rem;
@@ -157,10 +266,41 @@ nav .navigation-list button {
   gap: 1rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 3rem;
+}
+
+.past-work-container .header {
+  margin-top: 1rem;
+  padding: 1.15rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  font-size: 1.25rem;
+  background-color: var(--berry-wine);
+
+  border: 0.45rem solid var(--coral-red);
+  border-radius: 3rem;
+}
+
+.past-work-container .past-work-list {
+  background-color: var(--fuchsia-bliss);
+
+  padding: 1rem;
+  margin: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
 }
 
 .past-work-container .past-work-list .experience-card {
-  background-color: lightgreen;
+  background-color: var(--berry-wine);
 
   padding: 1rem;
   margin: 1rem;
@@ -171,27 +311,17 @@ nav .navigation-list button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  border: 0.65rem solid var(--coral-red);
+  border-radius: 2rem;
 }
 
 .past-work-container .past-work-list .experience-card h1 {
-  background-color: lightsalmon;
+  background-color: var(--fuchsia-bliss);
 
   padding: 1rem;
   margin: 1rem;
-}
 
-/* CONTACT INFORMATION CONTACT INFORMATION CONTACT INFORMATION CONTACT INFORMATION */
-
-.contact-container {
-  background-color: lightgoldenrodyellow;
-
-  padding: 1rem;
-  margin: 1rem;
-}
-
-.contact-container .contact-list {
-  background-color: lightcoral;
-
-  padding: 1rem;
-  margin: 1rem;
+  border: 0.35rem solid var(--coral-red);
+  border-radius: 2rem;
 }
