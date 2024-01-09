@@ -22,7 +22,7 @@
   /* Pink & Fuchsia Colors */
   --mystic-pink: #e384ff;
   --fuchsia-bliss: #980f5a;
-  --coral-red: #e63e6d;
+  --sapphire-pink: #e63e6d;
   --ruby-rose: #b42b51;
 
   /* Turquoise Color */
@@ -62,6 +62,11 @@ body {
   padding: 1rem;
 }
 
+.heart div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR */
 
 nav {
@@ -70,16 +75,25 @@ nav {
   padding: 1rem;
   margin: 1rem;
   padding-right: 2rem;
+  padding-left: 2rem;
 
-  border: 0.45rem solid var(--coral-red);
+  border: 0.45rem solid var(--sapphire-twilight);
   border-radius: 3rem;
+
+  display: flex;
+  justify-content: flex-start;
+
+  width: fit-content;
 }
 
 nav .navigation-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: flex-end;
+
+  width: fit-content;
 }
 
 nav .navigation-list button {
@@ -88,7 +102,7 @@ nav .navigation-list button {
   padding-right: 2rem;
   padding-left: 2rem;
 
-  border: 0.35rem solid var(--coral-red);
+  border: 0.35rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 
   display: flex;
@@ -115,7 +129,7 @@ nav .navigation-list button span {
   padding: 1rem;
   margin: 1rem;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 }
 
@@ -134,7 +148,7 @@ nav .navigation-list button span {
   padding: 3rem;
   margin: 1rem;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 
   font-size: 1.3rem;
@@ -153,7 +167,7 @@ nav .navigation-list button span {
   padding: 1rem;
   margin: 1rem;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
 
@@ -172,7 +186,7 @@ nav .navigation-list button span {
   padding: 1rem;
   margin: 1rem;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 }
 
@@ -195,7 +209,7 @@ nav .navigation-list button span {
   word-wrap: break-word;
   max-width: fit-content;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
 
@@ -211,7 +225,7 @@ nav .navigation-list button span {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
 
@@ -229,7 +243,7 @@ nav .navigation-list button span {
   justify-content: center;
   align-items: center;
 
-  border: 0.45rem solid var(--coral-red);
+  border: 0.45rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 }
 
@@ -249,7 +263,7 @@ nav .navigation-list button span {
 
   padding: 0.5rem;
 
-  border: 0.25rem solid var(--coral-red);
+  border: 0.25rem solid var(--sapphire-twilight);
   border-radius: 5rem;
 }
 
@@ -267,7 +281,7 @@ nav .navigation-list button span {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 }
 
@@ -279,7 +293,7 @@ nav .navigation-list button span {
   font-size: 1.25rem;
   background-color: var(--berry-wine);
 
-  border: 0.45rem solid var(--coral-red);
+  border: 0.45rem solid var(--sapphire-twilight);
   border-radius: 3rem;
 }
 
@@ -295,7 +309,7 @@ nav .navigation-list button span {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
 
@@ -312,7 +326,7 @@ nav .navigation-list button span {
   flex-direction: column;
   justify-content: flex-end;
 
-  border: 0.65rem solid var(--coral-red);
+  border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
 
@@ -322,6 +336,6 @@ nav .navigation-list button span {
   padding: 1rem;
   margin: 1rem;
 
-  border: 0.35rem solid var(--coral-red);
+  border: 0.35rem solid var(--sapphire-twilight);
   border-radius: 2rem;
 }
