@@ -25,38 +25,58 @@
 </head>
 <body>
     
+    <!-- =================================================================================================== -->
+
     <nav>
 
+        <!-- Logo section of the navigation bar -->
         <div class="nav__logo">
-            <a href=""><img src="./assets/personal_logo.png" alt="PERSONAL LOGO"></a>
+            <!-- Link wrapping the logo image -->
+            <a href="">
+                <!-- Logo image -->
+                <img src="./assets/personal_logo.png" alt="PERSONAL LOGO">
+            </a>
         </div>
 
+        <!-- Navigation list -->
         <ul class="nav__list">
 
+            <!-- Navigation item for 'Home' -->
             <li class="nav__link">
                 <button>
+                    <!-- Icon for 'Home' -->
                     <span class="nav__icon"> home </span>
+                    <!-- Text label for 'Home' -->
                     <h1>HOME</h1>
                 </button>
             </li>
             
+            <!-- Navigation item for 'Skills' -->
             <li class="nav__link">
                 <button>
+                    <!-- Icon for 'Skills' -->
                     <span class="nav__icon"> handyman </span>
+                    <!-- Text label for 'Skills' -->
                     <h1>SKILLS</h1>
                 </button>
             </li>
             
+            <!-- Navigation item for 'Projects' -->
             <li class="nav__link">
                 <button>
+                    <!-- Icon for 'Projects' -->
                     <span class="nav__icon"> folder_copy </span>
+                    <!-- Text label for 'Projects' -->
                     <h1>PROJECTS</h1>
                 </button>
             </li>
 
+            <!-- Navigation item for 'Contacts' -->
             <li class="nav__link">
                 <button>
+                    <!-- Icon for 'Contacts' -->
                     <span class="nav__icon"> contact_page </span>
+                    <!-- Text label for 'Contacts' -->
                     <h1>CONTACTS</h1>
                 </button>
             </li>
@@ -65,19 +85,26 @@
 
     </nav>
 
+    <!-- =================================================================================================== -->
+
     <div class="main-content">
 
+        <!-- Main container for the Hero section -->
         <div class="main-content__hero">
 
+            <!-- Container for the Hero description -->
             <div class="hero__description">
 
+                <!-- Greeting or Introductory text -->
                 <h1>HEY THERE! I'M ... </h1>
 
+                <!-- Name with Pronouns -->
                 <h2>
                     ASHIQ ARIB GAZI 
                     <span><i>HE/HIM</i></span>
                 </h2>
 
+                <!-- Educational Background Information -->
                 <h3>
                     PURSUING UNDERGRADUATE IN SOFTWARE ENGINEERING 
                     <span><i>UNIVERSITY OF OTTAWA</i></span>
@@ -85,17 +112,40 @@
 
             </div>
 
+            <!-- Placeholder or container for the Hero's headshot or image -->
             <div class="hero__headshot"></div>
 
         </div>
 
+
+        <!-- Main container for the Skills section -->
         <div class="main-content__skills">
 
+            <!-- Header for the Skills section -->
             <div class="skills__header">
                 <h1>HARD SKILLS / SKILL SET:</h1>
             </div>
 
-            <ul class="skills__list">
+            <!-- List of Skills -->
+            <ul class="skills__list">                
+
+                <!-- 
+
+                    BASIC SKILL STRUCTURE:
+
+                    Skill Item:
+                    <li class="skills__item">
+
+                        Skill Name:
+                        <h1>HTML</h1>
+
+                        Skill Logo:
+                        <span class="skills__logo">
+                            <img src="./assets/html_logo.png" alt="HTML">
+                        </span>
+
+                    </li>
+                -->
 
                 <li class="skills__item">
 
@@ -108,68 +158,68 @@
                 </li>
 
                 <li class="skills__item">
-
                     <h1>CSS</h1>
-
                     <span class="skills__logo">
                         <img src="./assets/css_logo.png" alt="CSS">
                     </span>
-                    
                 </li>
 
                 <li class="skills__item">
-
                     <h1>REACT</h1>
-
                     <span class="skills__logo">
                         <img src="./assets/reactjs_logo.png" alt="REACT">
                     </span>
-                    
                 </li>
 
                 <li class="skills__item">
-
                     <h1>JAVASCRIPT</h1>
-
                     <span class="skills__logo">
                         <img src="./assets/JavaScript_logo.png" alt="JAVASCRIPT">
                     </span>
-                    
                 </li>
 
                 <li class="skills__item">
-
                     <h1>TENSORFLOW</h1>
-
                     <span class="skills__logo">
                         <img src="./assets/tesnorflow_logo.png" alt="TENSORFLOW">
                     </span>
-                    
                 </li>
 
-                <!-- ... other skills ... -->
+                <!-- Placeholder for additional skills -->
 
             </ul>
 
         </div>
 
+        <!-- =================================================================================================== -->
+
+        <!-- Main container for the Projects section -->
         <div class="main-content__projects">
 
+            <!-- Header for the Projects section -->
             <div class="projects__header">
                 <h1>PAST PROJECTS / EXPERIENCE :</h1>
             </div>
 
+            <!-- List of Projects -->
             <ul class="projects__list">
 
+                <!-- Single Project Item Container -->
                 <li class="projects__item-container">
 
+                    <!-- Card for a Single Project -->
                     <button class="projects__card">
 
+                        <!-- Details of the Project -->
                         <div class="projects__details">
 
+                            <!-- Project Name -->
                             <h1 class="projects__name">"TASKS MANAGER"</h1>
+
+                            <!-- Project Description -->
                             <h2 class="projects__desc">To-do list and tasks organizer</h2>
 
+                            <!-- List of Skills used in the Project -->
                             <ul class="projects__skills">
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -182,11 +232,13 @@
 
                 </li>
 
-                <!-- ... other projects ... -->
+                <!-- Placeholder for additional project items -->
 
             </ul>
 
         </div>
+
+        <!-- =================================================================================================== -->
 
     </div>
 
