@@ -1,3 +1,4 @@
+/* =================================================================================================== */
 :root {
   /* Blue Colors */
   --shimmering-sky: #c2d9ff;
@@ -39,10 +40,30 @@
   --border-medium: 0.4rem;
   --border-light: 0.22rem;
   --border-super-light: 0.16rem;
+
+  /* New Variables for Common Styles */
+  --border-radius: 3rem;
+  --border: 0.65rem solid var(--sapphire-twilight);
+  --margin: 1rem;
+  --padding: 1rem;
+  --flex-display: flex;
+  --flex-direction-row: row;
+  --flex-direction-column: column;
+  --justify-content: space-evenly;
+  --align-items: center;
+  --gap: 1rem;
+  --background-size: cover;
+  --font-size: 1.3rem;
+  --border-radius-small: 2rem;
+  --background-color-dark: var(--dark-burgundy);
+  --background-color-light: var(--fuchsia-bliss);
+  --text-align: center;
+  --word-wrap: break-word;
+  --fit-content: fit-content;
 }
 
-/* UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING UNIVERSAL STYLING */
-
+/* =================================================================================================== */
+/* UNIVERSAL STYLING... */
 * {
   margin: 0;
   padding: 0;
@@ -52,11 +73,6 @@
   font-family: "Raleway", "Montserrat", sans-serif;
 
   color: white;
-
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
 
 body {
@@ -65,137 +81,123 @@ body {
   background-size: cover;
 
   padding: 1rem;
-}
 
-.heart div {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR */
-
-nav {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  margin-top: 1rem;
-  margin-left: 1rem;
 }
 
-nav .logo_redirect img {
+/* =================================================================================================== */
+/* MAIN CONTENT */
+
+.main-content {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  justify-content: var(--align-items);
+  align-items: var(--align-items);
+}
+
+.main-content div {
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+}
+
+/* =================================================================================================== */
+/* NAVIGATION BAR */
+
+nav .nav__logo img {
   width: 5rem;
   height: auto;
-
   border-radius: 2rem;
-
   display: flex;
   flex: 1;
 }
 
-nav .navigation-list {
-  display: flex;
-  flex-direction: row;
+nav .nav__list {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: var(--gap);
   justify-content: flex-end;
-
   flex: 2;
-
   background-color: var(--berry-wine);
-
-  padding: 1rem;
-  margin: 1rem;
+  padding: var(--padding);
+  margin: var(--margin);
   padding-right: 2rem;
   padding-left: 2rem;
-
-  border: 0.45rem solid var(--sapphire-twilight);
-  border-radius: 3rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: var(--fit-content);
 }
 
-nav .navigation-list button {
+nav .nav__link button {
   background-color: var(--dark-burgundy);
   padding: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
-
   border: 0.35rem solid var(--sapphire-twilight);
   border-radius: 3rem;
-
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   align-items: center;
 }
 
-nav .navigation-list button span {
+nav .nav__icon {
   margin-right: 1rem;
 }
 
-/* LANDING DOCK LANDING DOCK LANDING DOCK LANDING DOCK LANDING DOCK */
+/* =================================================================================================== */
+/* LANDING DOCK */
 
-.hero {
+.main-content__hero {
   background-color: var(--berry-wine);
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-evenly;
-
-  padding: 1rem;
-  margin: 1rem;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 3rem;
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: var(--justify-content);
+  padding: var(--padding);
+  margin: var(--margin);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: var(--fit-content);
 }
 
-.hero .description {
+.hero__description {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(./assets/hero_background.png);
-  background-size: cover;
-
+  background-size: var(--background-size);
   flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  gap: var(--gap);
   align-items: flex-start;
   justify-content: flex-end;
-
   padding: 3rem;
-  margin: 1rem;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 2rem;
-
-  font-size: 1.3rem;
+  margin: var(--margin);
+  border: var(--border);
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size);
 }
 
-.hero .description h1 {
+.hero__description h1 {
   font-size: 2.1rem;
 }
 
-.hero .description h2 {
+.hero__description h2,
+.hero__description h3 {
   font-size: 2.8rem;
 }
 
-.hero .description h3 {
-  font-size: 2rem;
-}
-
-.hero .description h2 i {
+.hero__description h2 i,
+.hero__description h3 i {
   font-size: 2rem;
   margin-left: 1rem;
 }
 
-.hero .description h3 i {
-  font-size: 1.7rem;
-  margin-left: 1rem;
-}
-
-.hero .headshot {
+.hero__headshot {
   background-color: lightseagreen;
   flex: 1;
 
@@ -212,9 +214,10 @@ nav .navigation-list button span {
   border-radius: 2rem;
 }
 
-/* SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK SKILLSET DOCK */
+/* =================================================================================================== */
+/* SKILLSET DOCK */
 
-.skillset-container {
+.main-content__skills {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(./assets/skills_background.png);
   background-size: contain;
@@ -229,9 +232,11 @@ nav .navigation-list button span {
 
   border: 0.65rem solid var(--sapphire-twilight);
   border-radius: 3rem;
+
+  width: fit-content;
 }
 
-.skillset-container .header {
+.skills__header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./assets/skills_header_background.png);
   background-size: cover;
@@ -254,24 +259,21 @@ nav .navigation-list button span {
   border-radius: 2rem;
 }
 
-.skillset-container .skillset-list {
-  background-color: var(--dark-burgundy);
-
+.skills__list {
+  background-color: var(--background-color-dark);
   padding: 2rem;
-  margin: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-evenly;
+  margin: var(--margin);
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  gap: var(--gap);
+  justify-content: var(--justify-content);
   flex-wrap: wrap;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 2rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
-.skillset-container .skillset-list .skill-mini-card {
-  background-color: var(--fuchsia-bliss);
+.skills__item {
+  background-color: var(--background-color-light);
 
   padding: 1.4rem;
   padding-top: 0.5rem;
@@ -288,15 +290,15 @@ nav .navigation-list button span {
   border-radius: 3rem;
 }
 
-.skillset-container .skillset-list .skill-mini-card h1 {
+.skills__item h1 {
   font-size: 1.6rem;
 }
 
-.skillset-container .skillset-list .skill-mini-card span {
+.skills__item span {
   margin-left: 0.3rem;
 }
 
-.skill-logo-representation img {
+.skills__logo img {
   width: 1.85rem;
   height: auto;
 
@@ -308,32 +310,30 @@ nav .navigation-list button span {
   border-radius: 5rem;
 }
 
-/* PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO */
+/* PORTFOLIO */
 
-.past-work-container {
-  background-color: var(--dark-burgundy);
-
-  padding: 1rem;
-  margin: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-evenly;
+.main-content__projects {
+  background-color: var(--background-color-dark);
+  padding: var(--padding);
+  margin: var(--margin);
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  gap: var(--gap);
+  justify-content: var(--align-items);
+  align-items: var(--align-items);
   flex-wrap: wrap;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 3rem;
+  width: var(--fit-content);
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
-.past-work-container .header {
+.projects__header {
   margin-top: 1rem;
   margin-bottom: 1rem;
 
   padding: 1.15rem;
   padding-left: 1.7rem;
   padding-right: 1.7rem;
-
   font-size: 1.25rem;
 
   background-color: var(--berry-wine);
@@ -342,46 +342,42 @@ nav .navigation-list button span {
   border-radius: 3rem;
 }
 
-.past-work-container .past-work-list {
-  background-color: var(--fuchsia-bliss);
-
-  padding: 1rem;
-  margin: 1rem;
+.projects__list {
+  background-color: var(--background-color-light);
+  padding: var(--padding);
+  margin: var(--margin);
   margin-top: 0;
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-evenly;
+  width: var(--fit-content);
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  gap: var(--gap);
+  justify-content: var(--justify-content);
   flex-wrap: wrap;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 2rem;
+  border: var(--border);
+  border-radius: var(--border-radius-small);
 }
 
-.past-work-container .past-work-list .experience-card {
+.projects__item-container .projects__card {
   background-color: var(--berry-wine);
 
   padding: 1rem;
   margin: 1rem;
 
   height: 20rem;
-  width: 15rem;
+  width: fit-content;
+
+  border: 0.65rem solid var(--sapphire-twilight);
+  border-radius: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  border: 0.65rem solid var(--sapphire-twilight);
-  border-radius: 2rem;
+  align-items: flex-start;
 }
 
-.past-work-container .past-work-list .experience-card h1 {
-  background-color: var(--fuchsia-bliss);
-
-  padding: 1rem;
-  margin: 1rem;
-
-  border: 0.35rem solid var(--sapphire-twilight);
-  border-radius: 2rem;
+.projects__details {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  justify-content: flex-end;
+  align-items: flex-start;
 }
