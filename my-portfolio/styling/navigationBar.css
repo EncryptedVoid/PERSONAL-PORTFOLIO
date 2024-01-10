@@ -1,0 +1,44 @@
+/* =================================================================================================== */
+/* NAVIGATION BAR */
+
+nav .nav__logo img {
+  width: 5rem;
+  height: auto;
+  border-radius: 2rem;
+  display: flex;
+  flex: 1;
+}
+
+nav .nav__list {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: flex-end;
+  flex: 2;
+  background-color: var(--berry-wine);
+  padding: var(--padding);
+  margin: var(--margin);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: var(--fit-content);
+}
+
+nav .nav__link button {
+  background-color: var(--dark-burgundy);
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border: 0.35rem solid var(--sapphire-twilight);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav__icon {
+  margin-right: 1rem;
+}

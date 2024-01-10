@@ -1,0 +1,14 @@
+/* =================================================================================================== */
+/* MAIN CONTENT */
+
+.main-content {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  justify-content: var(--align-items);
+  align-items: var(--align-items);
+}
+
+.main-content div {
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+}

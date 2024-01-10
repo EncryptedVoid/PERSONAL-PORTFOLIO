@@ -1,0 +1,65 @@
+/* =================================================================================================== */
+/* LANDING DOCK */
+
+.main-content__hero {
+  background-color: var(--berry-wine);
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: var(--justify-content);
+  padding: var(--padding);
+  margin: var(--margin);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: var(--fit-content);
+}
+
+.hero__description {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./assets/hero_background.png);
+  background-size: var(--background-size);
+  flex: 2;
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-column);
+  gap: var(--gap);
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 3rem;
+  margin: var(--margin);
+  border: var(--border);
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size);
+}
+
+.hero__description h1 {
+  font-size: 2.1rem;
+}
+
+.hero__description h2,
+.hero__description h3 {
+  font-size: 2.8rem;
+}
+
+.hero__description h2 i,
+.hero__description h3 i {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.hero__headshot {
+  background-color: lightseagreen;
+  flex: 1;
+
+  background: url(./assets/profile_placeholder.png);
+  background-size: cover;
+
+  height: 25rem;
+  width: auto;
+
+  padding: 1rem;
+  margin: 1rem;
+
+  border: 0.65rem solid var(--sapphire-twilight);
+  border-radius: 2rem;
+}

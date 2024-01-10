@@ -1,0 +1,95 @@
+/* =================================================================================================== */
+/* SKILLSET DOCK */
+
+.main-content__skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./assets/skills_background.png);
+  background-size: contain;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 1rem;
+  margin: 1rem;
+
+  border: 0.65rem solid var(--sapphire-twilight);
+  border-radius: 3rem;
+
+  width: fit-content;
+}
+
+.skills__header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./assets/skills_header_background.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+
+  margin: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0.5rem 0.25rem 1rem #0e101e;
+
+  font-size: 1.4rem;
+  word-wrap: break-word;
+  max-width: fit-content;
+
+  border: 0.65rem solid var(--sapphire-twilight);
+  border-radius: 2rem;
+}
+
+.skills__list {
+  background-color: var(--background-color-dark);
+  padding: 2rem;
+  margin: var(--margin);
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  gap: var(--gap);
+  justify-content: var(--justify-content);
+  flex-wrap: wrap;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.skills__item {
+  background-color: var(--background-color-light);
+
+  padding: 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.45rem solid var(--sapphire-twilight);
+  border-radius: 3rem;
+}
+
+.skills__item h1 {
+  font-size: 1.6rem;
+}
+
+.skills__item span {
+  margin-left: 0.3rem;
+}
+
+.skills__logo img {
+  width: 1.85rem;
+  height: auto;
+
+  background-color: white;
+
+  padding: 0.5rem;
+
+  border: 0.25rem solid var(--sapphire-twilight);
+  border-radius: 5rem;
+}
