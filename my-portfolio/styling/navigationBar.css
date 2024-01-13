@@ -1,12 +1,33 @@
 /* =================================================================================================== */
 /* NAVIGATION BAR */
 
+nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 95vw;
+}
+
+nav .nav__logo {
+  display: flex;
+}
+
 nav .nav__logo img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 5rem;
   height: auto;
   border-radius: 2rem;
-  display: flex;
-  flex: 1;
+}
+
+nav .nav-list__container {
+  display: var(--flex-display);
+  flex-direction: var(--flex-direction-row);
+  justify-content: flex-end;
 }
 
 nav .nav__list {
@@ -15,7 +36,6 @@ nav .nav__list {
   flex-wrap: wrap;
   gap: var(--gap);
   justify-content: flex-end;
-  flex: 2;
   background-color: var(--berry-wine);
   padding: var(--padding);
   margin: var(--margin);
@@ -37,6 +57,16 @@ nav .nav__link button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+nav .nav__link button:hover {
+  border: 0.35rem solid var(--twilight-magenta);
+  color: white;
+  background-color: var(--soft-indigo);
 }
 
 nav .nav__icon {

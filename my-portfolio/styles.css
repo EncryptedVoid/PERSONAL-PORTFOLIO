@@ -4,7 +4,7 @@
 @import url("./styling/navigationBar.css");
 @import url("./styling/landingDock.css");
 @import url("./styling/skillsetDock.css");
-@import url("./styling/portfolio.css");
+@import url("./styling/projectsDock.css");
 
 /* =================================================================================================== */
 :root {
@@ -44,14 +44,14 @@
   --dark-navy: #010730;
 
   /* Border Witdhs*/
-  --border-heavy: 0.65rem;
-  --border-medium: 0.4rem;
-  --border-light: 0.22rem;
-  --border-super-light: 0.16rem;
+  --border-heavy: 0.5rem;
+  --border-medium: 0.37rem;
+  --border-light: 0.2rem;
+  --border-super-light: 0.15rem;
 
   /* New Variables for Common Styles */
-  --border-radius: 3rem;
-  --border: 0.65rem solid var(--sapphire-twilight);
+  --border-radius: 2rem;
+  --border: var(--border-medium) solid var(--sapphire-twilight);
   --margin: 1rem;
   --padding: 1rem;
   --flex-display: flex;
@@ -62,7 +62,7 @@
   --gap: 1rem;
   --background-size: cover;
   --font-size: 1.3rem;
-  --border-radius-small: 2rem;
+  --border-radius-small: 1rem;
   --background-color-dark: var(--dark-burgundy);
   --background-color-light: var(--fuchsia-bliss);
   --text-align: center;
