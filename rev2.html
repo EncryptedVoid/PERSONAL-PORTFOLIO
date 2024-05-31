@@ -1,130 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>PORTFOLIO REV2</title>
-
     <link rel="stylesheet" href="rev2.css">
-
 </head>
-
 <body>
 
-<nav>
-
-    <div class="logo">
-        <a href=""><img src="./my-portfolio/styling/assets/personal_logo.png" alt="ASHIQ GAZI"></a>
+    <div class="navbar__container">
+        <ul class="navbar">
+            <li><div class="navbar-home"><a href="#home">LANDING PAGE</a></div></li>
+            <li><div class="navbar-skills"><a href="#skills">SKILLS</a></div></li>
+            <li><div class="navbar-projects"><a href="#projects">PROJECTS</a></div></li>
+        </ul>
     </div>
 
-    <div class="navigation">
-        <button>HOME</button>
-        <button>ABOUT ME</button>
-        <button>PROJECTS</button>
-        <button>CONTACT ME</button>
-    </div>
+    <div class="resume">
+        <div class="home">
+            <div class="home__greeting">
+                <h1>HEY, I'M ASHIQ!</h1>
+                <h2>I'M A 2ND YEAR CANADIAN SOFTWARE ENGINEERING STUDENT</h2>
+            </div>
 
-</nav>
-
-<div class="main-content">
-
-    <div class="landing">
-
-        <div class="greeting">
-            <h2>HEY THERE! IM...</h2>
-            <h1>ASHIQ GAZI <span>HE/HIM</span></h1>
-            <h3>SOFTWARE ENGINEERING UNGRADUATE STUDENT <span>UNIVERSITY OF OTTAWA</span></h3>
+            <div class="home__contact">
+                <h2>CONTACT ME</h2>
+                <button>GMAIL</button>
+                <button>LINKEDIN</button>
+                <button>GITHUB</button>
+                <button>LEETCODE</button>
+            </div>
         </div>
+        <div class="skillset__container">
 
-        <div class="headshot">
-            <img src="./my-portfolio/styling/assets/personal_logo.png" alt="ASHIQ GAZI">
-        </div>
+            <h2>SKILLSET</h2>
 
-    </div>
-
-    <div class="portfolio">
-
-        <div class="skillset">
-
-            <div class="header">TECHNICAL SKILLS :</div>
-            
-            <ul class="toolbox">
-                <li>GIT</li>
-                <li>REACT</li>
-                <li>TENSORFLOW</li>
+            <h3>PROGRAMMING</h3>
+            <ul class="skillset__container-prog">
+                <li>JAVA</li>
                 <li>C++</li>
+                <li>C</li>
+                <li>PYTHON</li>
+                <li>GIT</li>
+            </ul>
+
+            <h3>FRONT END DEVELOPMENT</h3>
+            <ul class="skillset__container-WebDev">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JAVASCRIPT</li>
+                <li>TYPESCRIPT</li>
+                <li>NODE.JS</li>
+                <li>REACTJS</li>
+                <li>BOOTSTRAP</li>
+                <li>TAILWIND</li>
+                <li>MATERIALIZE</li>
+                <li>FIGMA</li>
+            </ul>
+
+            <h3>ARTIFICIAL INTELLIGENCE</h3>
+            <ul class="skillset__container-ai">
+                <li>TENSORFLOW</li>
+                <li>SCI-KIT LEARN</li>
+                <li>WEIGHTS & BIASES</li>
+                <li>PANDAS</li>
+                <li>OPENCV</li>
+            </ul>
+
+            <h3>ROBOTICS AND CIRCUITRY</h3>
+            <ul class="skillset__container-robotics">
+                <li>UBUNTU LINUX</li>
+                <li>ROS</li>
+                <li>ARDUINO</li>
+                <li>RASPBERRY PI</li>
+                <li>SOLDERING</li>
+                <li>3D PRINTING</li>
+                <li>ULTIMAKER CURA</li>
+                <li>TINKER CAD</li>
+                <li>AUTOCAD</li>
+                <li>DOCKER</li>
+            </ul>
+
+            <h3>LINGUISTICS</h3>
+            <ul class="skillset__container-robotics">
+                <li>ENGLISH</li>
+                <li>FRENCH</li>
+                <li>BENGALI</li>
             </ul>
 
         </div>
+        
+        <h1>PROJECTS</h1>
+        <div class="projects__container">
+            <button class="projects__card">
 
-        <div class="work-experience">
+                <!-- Details of the Project -->
+                <div class="projects__details">
 
-            <div class="exp-card">
+                    <!-- Project Name -->
+                    <h1 class="projects__name">TASKS MANAGER</h1>
 
-                <div class="info">
-                    <div class="classification">
-                        <button class="job-placement-type">CO-OP</button>
-                        <button class="work-duration"><span>CALENDAR LOGO</span>10MONTHS</button>
-                    </div>
-                    <h1 class="position">ENGINEERING<span>COMPANY</span></h1>
-                    <div class="personal-development"></div>
-                    <h2 class="work-term-summary">LOREM IPSUM DOLOR SIT AMET</h2>
+                    <!-- Project Description -->
+                    <h2 class="projects__desc">To-do list and tasks organizer</h2>
+
+                    <!-- List of Skills used in the Project -->
+                    <ul class="projects__skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+
                 </div>
 
-                <img src="./my-portfolio/styling/assets/personal_logo.png" alt="COMPANY LOGO" class="company-logo">
+            </button>
+            <button class="projects__card">
 
-            </div>
+                <!-- Details of the Project -->
+                <div class="projects__details">
 
-        </div>
+                    <!-- Project Name -->
+                    <h1 class="projects__name">TASKS MANAGER</h1>
 
-        <div class="personal-projects">
-            
-            <div class="showcase">
+                    <!-- Project Description -->
+                    <h2 class="projects__desc">To-do list and tasks organizer</h2>
 
-                <div class="frontend-projects">
-    
-                    <div class="project-elements">
-    
-                        <div class="project-card">
-    
-                            <div class="labelling">
-    
-                                <h1>NAME</h1>
-                                <h2>DESCRIPTION</h2>
-    
-                                <ul class="toolset">
-                                    <li>GIT</li>
-                                    <li>REACT</li>
-                                    <li>TENSORFLOW</li>
-                                    <li>C++</li>
-                                </ul>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-    
+                    <!-- List of Skills used in the Project -->
+                    <ul class="projects__skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+
                 </div>
-    
-                <div class="python-projects"></div>
-    
-                <div class="java-projects"></div>
-    
-                <div class="c-projects"></div>
-    
-            </div>
 
+            </button>   
         </div>
 
     </div>
 
-</div>
+    <div class="footer">
 
-<footer></footer>
+    </div>
 
 </body>
 </html>
