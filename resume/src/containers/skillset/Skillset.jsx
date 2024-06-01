@@ -1,67 +1,95 @@
-import React from 'react'
-import styles from '../skillset/skillset.csss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../skillset/skillset.css'; // Plain CSS import
+
+const Skill = ({ name, image }) => (
+  <li className="skillset__list-item">
+    <img src={image} alt={`${name} logo`} className="skillset__icon" loading="lazy" />
+    <span className="skillset__text">{name}</span>
+  </li>
+);
+
+Skill.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
+
+const SkillList = ({ title, skills }) => (
+  <div>
+    <h2 className="skillset__category-title">{title}</h2>
+    <ul className="skillset__list">
+      {skills.map(skill => (
+        <Skill key={skill.name} name={skill.name} image={skill.image} />
+      ))}
+    </ul>
+  </div>
+);
+
+SkillList.propTypes = {
+  title: PropTypes.string.isRequired,
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 const Skillset = () => {
+  const programmingSkills = [
+    { name: 'JAVA', image: '/assets/java_logo.webp' },
+    { name: 'C++', image: '/assets/cpp_logo.png' },
+    { name: 'C LANGUAGE', image: '/assets/c_logo.png' },
+    { name: 'PYTHON', image: '/assets/python_logo.png' },
+    { name: 'GIT', image: '/assets/git_logo.png' },
+  ];
+  const frontEndSkills = [
+    { name: 'HTML5', image: '/assets/html_logo.png' },
+    { name: 'CSS3', image: '/assets/css_logo.png' },
+    { name: 'JAVASCRIPT', image: '/assets/javascript_logo.webp' },
+    { name: 'TYPESCRIPT', image: '/assets/typescript_logo.png' },
+    { name: 'NODE.JS', image: '/assets/nodejs_logo.svg' },
+    { name: 'REACTJS', image: '/assets/react_logo.png' },
+    { name: 'BOOTSTRAP', image: '/assets/bootstrap_logo.png' },
+    { name: 'TAILWIND', image: '/assets/tailwind_logo.png' },
+    { name: 'MATERIALIZE', image: '/assets/materialize_logo.png' },
+    { name: 'FIGMA', image: '/assets/figma_logo.png' },
+  ];
+  const aiSkills = [
+    { name: 'TENSORFLOW', image: '/assets/tensorflow_logo.png' },
+    { name: 'SCI-KIT LEARN', image: '/assets/scikit-learn_logo.png' },
+    { name: 'WEIGHTS & BIASES', image: '/assets/wb_logo.svg' },
+    { name: 'PANDAS', image: '/assets/pandas_logo.png' },
+    { name: 'OPENCV', image: '/assets/opencv_logo.webp' },
+  ];
+  const roboticsSkills = [
+    { name: 'UBUNTU LINUX', image: '/assets/ubuntu_logo.png' },
+    { name: 'ROBOT OPERATING SYSTEM', image: '/assets/ros_logo.png' },
+    { name: 'ARDUINO', image: '/assets/arduino_logo.png' },
+    { name: 'RASPBERRY PI', image: '/assets/raspberry-pi_logo.svg' },
+    { name: 'SOLDERING', image: '/assets/soldering_logo.png' },
+    { name: '3D PRINTING', image: '/assets/3dprinting_logo.png' },
+    { name: 'ULTIMAKER CURA', image: '/assets/cura_logo.png' },
+    { name: 'TINKER CAD', image: '/assets/tinkercad_logo.png' },
+    { name: 'AUTOCAD', image: '/assets/autocad_logo.png' },
+    { name: 'DOCKER', image: '/assets/docker_logo.webp' },
+  ];
+  const linguisticSkills = [
+    { name: 'ENGLISH', image: '/assets/canada_logo.png' },
+    { name: 'FRENCH', image: '/assets/france_logo.png' },
+    { name: 'BENGALI', image: '/assets/bangladesh_logo.png' },
+  ];
+
   return (
-    <div class="skillset__container">
-
-      <h2>SKILLSET</h2>
-
-      <h3>PROGRAMMING</h3>
-      <ul class="skillset__container-prog">
-          <li>JAVA</li>
-          <li>C++</li>
-          <li>C</li>
-          <li>PYTHON</li>
-          <li>GIT</li>
-      </ul>
-
-      <h3>FRONT END DEVELOPMENT</h3>
-      <ul class="skillset__container-WebDev">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JAVASCRIPT</li>
-          <li>TYPESCRIPT</li>
-          <li>NODE.JS</li>
-          <li>REACTJS</li>
-          <li>BOOTSTRAP</li>
-          <li>TAILWIND</li>
-          <li>MATERIALIZE</li>
-          <li>FIGMA</li>
-      </ul>
-
-      <h3>ARTIFICIAL INTELLIGENCE</h3>
-      <ul class="skillset__container-ai">
-          <li>TENSORFLOW</li>
-          <li>SCI-KIT LEARN</li>
-          <li>WEIGHTS & BIASES</li>
-          <li>PANDAS</li>
-          <li>OPENCV</li>
-      </ul>
-
-      <h3>ROBOTICS & CIRCUITRY</h3>
-      <ul class="skillset__container-robotics">
-          <li>UBUNTU LINUX</li>
-          <li>ROS</li>
-          <li>ARDUINO</li>
-          <li>RASPBERRY PI</li>
-          <li>SOLDERING</li>
-          <li>3D PRINTING</li>
-          <li>ULTIMAKER CURA</li>
-          <li>TINKER CAD</li>
-          <li>AUTOCAD</li>
-          <li>DOCKER</li>
-      </ul>
-
-      <h3>LINGUISTICS</h3>
-      <ul class="skillset__container-robotics">
-          <li>ENGLISH</li>
-          <li>FRENCH</li>
-          <li>BENGALI</li>
-      </ul>
-
+    <div className="skillset">
+      <h1 className="skillset__title">SKILLSET</h1>
+      <SkillList title="PROGRAMMING" skills={programmingSkills} />
+      <SkillList title="FRONT END DEVELOPMENT" skills={frontEndSkills} />
+      <SkillList title="ARTIFICIAL INTELLIGENCE" skills={aiSkills} />
+      <SkillList title="ROBOTICS & CIRCUITRY" skills={roboticsSkills} />
+      <SkillList title="LINGUISTICS" skills={linguisticSkills} />
     </div>
-  )
-}
+  );
+};
 
-export default Skillset
+export default Skillset;

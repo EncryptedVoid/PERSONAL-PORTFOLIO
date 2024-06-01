@@ -1,3 +1,14 @@
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  overflow-wrap: normal;
+  justify-content: flex-start;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(rgb(231, 61, 61), rgb(106, 44, 252));
+}
+
 .projects__container h2 {
   align-self: center;
   justify-self: center;
@@ -8,8 +19,7 @@
 }
 
 .projects__card {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(./assets/to_do_list_app_mockup.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   background-size: cover;
   background-position-x: center;
 
@@ -60,6 +70,9 @@
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 0.75rem;
+  display: flex;
+  justify-self: flex-start;
+  overflow-wrap: normal;
 }
 
 .projects__skills {

@@ -3,19 +3,19 @@ import styles from '../projects/projects.css'
 
 const Projects = () => {
   return (
-    <div class="projects__container">
+    <div className="projects__container">
 
       <h2>PROJECTS</h2>
 
-      <button class="projects__card">
+      <button className="projects__card">
 
-          <div class="projects__details">
+          <div className="projects__details">
 
-              <h1 class="projects__name">TASKS MANAGER</h1>
+              <h1 className="projects__name">TASKS MANAGER</h1>
 
-              <h2 class="projects__desc">To-do list and tasks organizer</h2>
+              <h2 className="projects__desc">To-do list and tasks organizer</h2>
 
-              <ul class="projects__skills">
+              <ul className="projects__skills">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JAVASCRIPT</li>
@@ -24,15 +24,15 @@ const Projects = () => {
           </div>
 
       </button>
-      <button class="projects__card">
+      <button className="projects__card">
 
-          <div class="projects__details">
+          <div className="projects__details">
 
-              <h1 class="projects__name">JUDOKO</h1>
+              <h1 className="projects__name">JUDOKO</h1>
 
-              <h2 class="projects__desc">Java based Sodoko runs in the console</h2>
+              <h2 className="projects__desc">Java based Sodoko runs in the console</h2>
 
-              <ul class="projects__skills">
+              <ul className="projects__skills">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JAVASCRIPT</li>
@@ -41,15 +41,15 @@ const Projects = () => {
           </div>
 
       </button>  
-      <button class="projects__card">
+      <button className="projects__card">
 
-          <div class="projects__details">
+          <div className="projects__details">
 
-              <h1 class="projects__name">WEATHER DASHBOARD</h1>
+              <h1 className="projects__name">WEATHER DASHBOARD</h1>
 
-              <h2 class="projects__desc">Simple but elegant weather dashboard</h2>
+              <h2 className="projects__desc">Simple but elegant weather dashboard</h2>
 
-              <ul class="projects__skills">
+              <ul className="projects__skills">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JAVASCRIPT</li>
