@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../projects/projectCard.css';
 
-const ProjectCard = ({ name, desc, skills }) => {
+const ProjectCard = ({ name, desc, skills, background }) => {
   return (
-    <button className="project-card">
+    <button className="project-card" style={{ backgroundImage: `url(${background})` }}>
       <div className="project-card__details">
         <h1 className="project-card__name">{name}</h1>
         <h2 className="project-card__desc">{desc}</h2>
