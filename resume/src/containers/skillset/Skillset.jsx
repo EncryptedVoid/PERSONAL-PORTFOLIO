@@ -15,7 +15,7 @@ Skill.propTypes = {
 };
 
 const SkillList = ({ title, skills }) => (
-  <div>
+  <div className='SkillBlock'>
     <h2 className="skillset__category-title">{title}</h2>
     <ul className="skillset__list">
       {skills.map(skill => (
@@ -64,7 +64,7 @@ const Skillset = () => {
   ];
   const roboticsSkills = [
     { name: 'UBUNTU LINUX', image: '/assets/ubuntu_logo.png' },
-    { name: 'ROBOT OPERATING SYSTEM', image: '/assets/ros_logo.png' },
+    { name: 'ROS', image: '/assets/ros_logo.png' },
     { name: 'ARDUINO', image: '/assets/arduino_logo.png' },
     { name: 'RASPBERRY PI', image: '/assets/raspberry-pi_logo.svg' },
     { name: 'SOLDERING', image: '/assets/soldering_logo.png' },
@@ -83,11 +83,13 @@ const Skillset = () => {
   return (
     <div className="skillset">
       <h1 className="skillset__title">SKILLSET</h1>
-      <SkillList title="PROGRAMMING" skills={programmingSkills} />
-      <SkillList title="FRONT END DEVELOPMENT" skills={frontEndSkills} />
-      <SkillList title="ARTIFICIAL INTELLIGENCE" skills={aiSkills} />
-      <SkillList title="ROBOTICS & CIRCUITRY" skills={roboticsSkills} />
-      <SkillList title="LINGUISTICS" skills={linguisticSkills} />
+      <div className='skillset-grouping'>
+        <li><SkillList title="LANGUAGES" skills={programmingSkills} /></li>
+        <li><SkillList title="FRONTEND" skills={frontEndSkills} /></li>
+        <li><SkillList title="AI&ML" skills={aiSkills} /></li>
+        <li><SkillList title="OTHER" skills={roboticsSkills} /></li>
+        <li><SkillList title="SPOKEN" skills={linguisticSkills} /></li>
+      </div>
     </div>
   );
 };

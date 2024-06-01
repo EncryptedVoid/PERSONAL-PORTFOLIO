@@ -1,0 +1,73 @@
+.project-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.531), #0000009c);
+  background-size: cover;
+  background-position-x: center;
+
+  height: 20rem;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  padding: 1rem;
+
+  border-radius: 2rem;
+  border: none;
+}
+
+.project-card__details {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+
+  height: fit-content;
+  width: fit-content;
+  background: linear-gradient(rgb(9, 0, 62), rgb(27, 0, 57));
+
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.project-card__name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  justify-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.project-card__desc {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+
+  overflow-wrap: normal;
+
+  display: flex;
+  justify-self: flex-start;
+
+  margin-bottom: 0.75rem;
+}
+
+.project-card__skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 0.75rem;
+}
+
+.project-card__skill-item {
+  background-color: var(--midnight-indigo);
+  color: white;
+  font-size: 0.8rem;
+  border: 0.12rem solid white;
+  border-radius: 0.75rem;
+
+  padding: 0.5rem;
+}
