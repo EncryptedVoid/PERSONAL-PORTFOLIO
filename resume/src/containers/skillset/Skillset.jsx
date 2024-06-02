@@ -41,7 +41,6 @@ const Skillset = () => {
     { name: 'C++', image: '/assets/cpp_logo.png' },
     { name: 'C LANGUAGE', image: '/assets/c_logo.png' },
     { name: 'PYTHON', image: '/assets/python_logo.png' },
-    { name: 'GIT', image: '/assets/git_logo.png' },
   ];
   const frontEndSkills = [
     { name: 'HTML5', image: '/assets/html_logo.png' },
@@ -66,6 +65,7 @@ const Skillset = () => {
     { name: 'UBUNTU LINUX', image: '/assets/ubuntu_logo.png' },
     { name: 'ROS', image: '/assets/ros_logo.png' },
     { name: 'ARDUINO', image: '/assets/arduino_logo.png' },
+    { name: 'GIT', image: '/assets/git_logo.png' },
     { name: 'RASPBERRY PI', image: '/assets/raspberry-pi_logo.svg' },
     { name: 'SOLDERING', image: '/assets/soldering_logo.png' },
     { name: '3D PRINTING', image: '/assets/3dprinting_logo.png' },
