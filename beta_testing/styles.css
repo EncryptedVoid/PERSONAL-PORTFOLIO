@@ -1,97 +1,23 @@
-/* =================================================================================================== */
-
-@import url("./styling/mainContent.css");
-@import url("./styling/navigationBar.css");
-@import url("./styling/landingDock.css");
-@import url("./styling/skillsetDock.css");
-@import url("./styling/projectsDock.css");
-
-/* =================================================================================================== */
-:root {
-  /* Blue Colors */
-  --shimmering-sky: #c2d9ff;
-  --ocean-blue: #3887be;
-  --midnight-indigo: #38419d;
-  --columbia-blue: #bdd5ea;
-  --sapphire: #0353a4;
-  --oxford-blue: #061a40;
-
-  /* Indigo & Purple Colors */
-  --soft-indigo: #8e8ffa;
-  --vivid-lavender: #7752fe;
-  --lilac-dream: #865dff;
-  --sapphire-twilight: #6d67e4;
-
-  /* Deep & Dark Colors */
-  --deep-night: #190482;
-  --twilight-magenta: #200e3a;
-  --dark-burgundy: #4c0031;
-  --berry-wine: #750550;
-
-  /* Pink & Fuchsia Colors */
-  --mystic-pink: #e384ff;
-  --fuchsia-bliss: #980f5a;
-  --sapphire-pink: #e63e6d;
-  --ruby-rose: #b42b51;
-
-  /* Turquoise Color */
-  --turquoise-splash: #52d3d8;
-
-  /* White & Black Colors */
-  --ghost-white: #f7f7ff;
-  --void: #0f111e;
-  --abyss: #0e101e;
-  --dark-navy: #010730;
-
-  /* Border Witdhs*/
-  --border-heavy: 0.5rem;
-  --border-medium: 0.37rem;
-  --border-light: 0.2rem;
-  --border-super-light: 0.15rem;
-
-  /* New Variables for Common Styles */
-  --border-radius: 2rem;
-  --border: var(--border-medium) solid var(--sapphire-twilight);
-  --margin: 1rem;
-  --padding: 1rem;
-  --flex-display: flex;
-  --flex-direction-row: row;
-  --flex-direction-column: column;
-  --justify-content: space-evenly;
-  --align-items: center;
-  --gap: 1rem;
-  --background-size: cover;
-  --font-size: 1.3rem;
-  --border-radius-small: 1rem;
-  --background-color-dark: var(--dark-burgundy);
-  --background-color-light: var(--fuchsia-bliss);
-  --text-align: center;
-  --word-wrap: break-word;
-  --fit-content: fit-content;
-}
-
-/* =================================================================================================== */
-/* UNIVERSAL STYLING... */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-
-  font-family: "Raleway", "Montserrat", sans-serif;
-
-  color: white;
-}
-
-body {
-  background: url(./styling/assets/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding: 1rem;
-
+.Navbar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.Navbar div {
+  background-color: black;
+  padding: 0.575rem 1rem 0.75rem 1rem;
+  border-radius: 0.5rem;
+
+  color: whitesmoke;
+  font-size: 1.4rem;
+  box-shadow: 0.3rem 0.3rem 0.25rem 0.25rem rgba(162, 71, 237, 0.6);
+}
+
+.Navbar div span img {
+  background-color: rgb(163, 71, 237);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
 }
