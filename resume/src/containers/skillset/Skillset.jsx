@@ -57,7 +57,7 @@ const Skillset = () => {
   const aiSkills = [
     { name: 'TENSORFLOW', image: '/assets/tensorflow_logo.png' },
     { name: 'SCI-KIT LEARN', image: '/assets/scikit-learn_logo.png' },
-    { name: 'WEIGHTS & BIASES', image: '/assets/wb_logo.svg' },
+    { name: 'WEIGHTS & BIASES', image: '/assets/wb_logo.png' },
     { name: 'PANDAS', image: '/assets/pandas_logo.png' },
     { name: 'OPENCV', image: '/assets/opencv_logo.webp' },
   ];

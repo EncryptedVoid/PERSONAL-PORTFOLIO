@@ -1,4 +1,6 @@
 .project-card {
+  position: relative;
+  overflow: hidden; /* Ensure child elements don't overflow the card */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,6 +18,26 @@
 
   border-radius: 2rem;
   border: 0.25rem dashed white;
+  transition: all 1s ease; /* Smooth transition for the hover effect */
+}
+
+.project-card:hover::before {
+  content: "EXPLORE PROJECT!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* White with 50% transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 3, 24);
+  transition: opacity 1s ease; /* Slow fade effect */
+  opacity: 1;
+  cursor: pointer;
 }
 
 .project-card__details {

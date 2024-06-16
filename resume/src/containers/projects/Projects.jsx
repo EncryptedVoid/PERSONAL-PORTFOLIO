@@ -6,53 +6,99 @@ const Projects = () => {
   const projects = [
     {
       name: 'Personal Portfolio',
-      desc: 'To-do list and tasks organizer',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/portfolio_banner.webp', // Add the background image path
+      desc: 'React-based Tech Resume Portfolio',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/portfolio_banner.webp',
+      link: 'https://yourlink1.com'
     },
     {
       name: 'Luxury Restaurant',
-      desc: 'Java based Sudoku runs in the console',
-      skills: ['REACT', 'CSS', 'NODE.JS'],
-      background: '/assets/luxury-restaurant_banner.webp', // Add the background image path
+      desc: 'Mock Website for a Luxury Restaurant',
+      skills: ['REACT', 'CSS3', 'NODE.JS'],
+      background: '/assets/luxury-restaurant_banner.webp',
+      link: 'https://yourlink2.com'
     },
     {
-      name: 'Judoko',
-      desc: 'Simple but elegant weather dashboard',
+      name: 'Judoku',
+      desc: 'Java-based Sudoku game',
       skills: ['JAVA', 'INTELLIJ', 'CMD'],
-      background: '/assets/judoko_banner.webp', // Add the background image path
+      background: '/assets/judoko_banner.webp',
+      link: 'https://yourlink3.com'
     },
     {
       name: 'ChatGPT UI Revamped',
-      desc: 'Personally developed online resume',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '"/assets/chatgpt-ui-revamp_banner.webp"', // Add the background image path
+      desc: 'Updated UI for OpenAIs ChatGPT',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/chatgpt-ui-revamp_banner.webp',
+      link: 'https://yourlink4.com'
     },
     {
       name: 'To Do List react App',
-      desc: 'Personally developed online resume',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/to-do-list-webapp_banner.webp', // Add the background image path
+      desc: 'Personal To Do List and Tasks Tracker',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/to-do-list-webapp_banner.webp',
+      link: 'https://yourlink5.com'
     },
     {
       name: 'Weather react App',
-      desc: 'Personally developed online resume',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/weather-webapp_banner.webp', // Add the background image path
+      desc: 'Personal Weather App with Modern UI',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/weather-webapp_banner.webp',
+      link: 'https://yourlink6.com'
     },
     {
       name: 'Alarm react App',
-      desc: 'Personally developed online resume',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/alarm-webapp_banner.webp', // Add the background image path
+      desc: 'Personal Alarm App with Modern UI',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/alarm-webapp_banner.webp',
+      link: 'https://yourlink7.com'
     },
     {
-      name: 'Fancy Sushi Restaurant',
-      desc: 'Personally developed online resume',
-      skills: ['REACT', 'CSS', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/sushi-restaurant_banner.webp', // Add the background image path
+      name: 'Fancy Sushi Buffet',
+      desc: 'Mock Website for a Sushi Buffet',
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      background: '/assets/sushi-restaurant_banner.webp',
+      link: 'https://yourlink8.com'
     }
   ];
+  
+  return (
+    <div className="project-container">
+      <h2 className="project-container__title">PROJECTS</h2>
+      <div className='project-container__card-deck'>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            name={project.name}
+            desc={project.desc}
+            skills={project.skills}
+            background={project.background}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </div>
+  );
+  
+  
+  return (
+    <div className="project-container">
+      <h2 className="project-container__title">PROJECTS</h2>
+      <div className='project-container__card-deck'>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            name={project.name}
+            desc={project.desc}
+            skills={project.skills}
+            background={project.background}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </div>
+  );
+  
 
   return (
     <div className="project-container">
@@ -65,7 +111,7 @@ const Projects = () => {
             name={project.name}
             desc={project.desc}
             skills={project.skills}
-            background={project.background} // Pass the background prop
+            background={project.background}
           />
         ))}
       </div>
