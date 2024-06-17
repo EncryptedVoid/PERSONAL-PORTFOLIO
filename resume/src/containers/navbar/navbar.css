@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin: 1.5rem;
+  margin: 2rem;
 
   justify-content: flex-start;
   align-items: flex-start;
@@ -13,7 +13,7 @@
   flex-direction: row;
   gap: 0.75rem;
 
-  background: rgb(3, 1, 21);
+  background: linear-gradient(rgb(90, 0, 26), rgb(147, 0, 42), rgb(170, 0, 48));
   border-radius: 0.5rem;
 
   color: whitesmoke;
@@ -26,6 +26,8 @@
   height: 4rem;
 
   padding: 0 0.75rem 0 0.75rem;
+
+  border: none;
 }
 
 .Navbar button h3 {
@@ -33,11 +35,11 @@
 }
 
 .Navbar button span img {
-  background-color: rgb(131, 9, 39);
+  background-color: rgb(53, 0, 13);
   padding: 0.5rem;
   border-radius: 0.5rem;
 
-  width: 1.5rem; /* Adjust width as needed */
+  width: 2.5rem; /* Adjust width as needed */
   height: auto; /* Adjust height as needed */
 
   justify-content: center;
@@ -45,5 +47,5 @@
 }
 
 .Navbar button:hover {
-  box-shadow: 0.3rem 0.3rem 0.25rem 0.25rem rgba(242, 59, 105, 0.3);
+  box-shadow: 0.3rem 0.3rem 0.25rem 0.25rem rgba(242, 59, 105, 0.4);
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Header, Footer, Skillset, Projects } from './containers';
+import { Navbar, Footer, Skillset, Projects } from './containers';
 
 import './App.css';
 
 const App = () => (
   <div className="App">
-    <Header id="header"/>
+    <Navbar id="navbar"/>
     <Skillset id="skills"/>
     <Projects id="projects"/>
     <Footer id="footer"/>
