@@ -22,6 +22,9 @@ const ProjectCard = ({ name, desc, skills, background, link }) => {
 
   return (
     <button className="project-card" style={{ backgroundImage: `url(${background})` }} onClick={handleClick}>
+      <div className="overlay">
+        <span className="gradient-text">EXPLORE PROJECT!</span>
+      </div>
       <div className="project-card__details">
         <h1 className="project-card__name">{name}</h1>
         <h2 className="project-card__desc">{desc}</h2>

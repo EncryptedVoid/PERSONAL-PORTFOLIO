@@ -9,7 +9,7 @@ const Greeting = () => {
         <h3>FEEL FREE TO EXPLORE MY PORTFOLIO.</h3>
       </div>
       <div className="university">
-        <h1>UNIVERSITY OF OTTAWA - <span>OTTAWA, CANADA</span></h1>
+        <h1>UNIVERSITY OF OTTAWA - <span className='red'>OTTA</span><span className='white'>WA, CAN</span><span className='red'>ADA</span></h1>
         <h2>BSC OF DATA SCIENCE - <span>HONOURS COMPUTER SCIENCE & MATHEMATICS</span></h2>
       </div>
     </div>

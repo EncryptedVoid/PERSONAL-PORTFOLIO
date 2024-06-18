@@ -6,6 +6,15 @@
 
   justify-content: flex-start;
   align-items: flex-start;
+
+  position: fixed;
+  top: 0;
+  width: fit-content;
+  background-color: #1d1e24; /* Set the background color to prevent content from showing through */
+  padding: 0.75rem;
+  border-radius: 1rem;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .Navbar .navigation-button {
@@ -13,7 +22,12 @@
   flex-direction: row;
   gap: 0.75rem;
 
-  background: linear-gradient(rgb(90, 0, 26), rgb(147, 0, 42), rgb(170, 0, 48));
+  background: linear-gradient(
+    27.5deg,
+    rgb(90, 0, 26),
+    rgb(147, 0, 42),
+    rgb(170, 0, 48)
+  );
   border-radius: 0.5rem;
 
   color: whitesmoke;
@@ -28,10 +42,17 @@
   padding: 0 0.75rem 0 0.75rem;
 
   border: none;
+
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .Navbar .contact-button {
-  background: linear-gradient(rgb(90, 0, 26), rgb(147, 0, 42), rgb(170, 0, 48));
+  background: linear-gradient(
+    27.5deg,
+    rgb(0, 32, 90),
+    rgb(0, 73, 147),
+    rgb(0, 170, 170)
+  );
   border-radius: 0.5rem;
 
   color: whitesmoke;
@@ -45,6 +66,8 @@
   padding: 0.75rem;
 
   border: none;
+
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .Navbar .navigation-button h3 {
@@ -72,5 +95,10 @@
 }
 
 .Navbar button:hover {
-  background: linear-gradient(rgb(67, 0, 18), rgb(88, 0, 25), rgb(122, 0, 35));
+  background: linear-gradient(
+    187.5deg,
+    rgb(238, 211, 0),
+    rgb(200, 160, 0),
+    rgb(214, 118, 0)
+  );
 }

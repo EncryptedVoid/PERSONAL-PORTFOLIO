@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '../navbar/navbar.css';
 
 const navigationData = [
-  { imgSrc: '/assets/home_logo.png', label: 'HOME', link: '/https://google.ca' },
+  { imgSrc: '/assets/home_logo.png', label: 'HOME', link: '#greeting' },
   { imgSrc: '/assets/skills_logo.png', label: 'SKILLS', link: '#skills' },
-  { imgSrc: '/assets/projects_icon.png', label: 'PROJECTS', link: '/projects' },
+  { imgSrc: '/assets/projects_icon.png', label: 'PROJECTS', link: '#projects' },
 ];
 
 const contactData = [
@@ -17,12 +17,22 @@ const contactData = [
   { imgSrc: '/assets/instagram_logo.png', link: 'https://www.instagram.com/official_dr.ash/' },
 ];
 
-const NavButton = ({ imgSrc, altText, label, link }) => (
-  <button onClick={() => window.location.href = link} className="Navbar__button navigation-button">
-    <span><img src={imgSrc} alt={altText} className="Navbar__image" /></span>
-    {label && <h3 className="Navbar__label">{label}</h3>}
-  </button>
-);
+const NavButton = ({ imgSrc, altText, label, link }) => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    const section = document.querySelector(link);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <button onClick={handleClick} className="Navbar__button navigation-button">
+      <span><img src={imgSrc} alt={altText} className="Navbar__image" /></span>
+      {label && <h3 className="Navbar__label">{label}</h3>}
+    </button>
+  );
+};
 
 const ContButton = ({ imgSrc, altText, label, link }) => (
   <button onClick={() => window.location.href = link} className="Navbar__button contact-button">

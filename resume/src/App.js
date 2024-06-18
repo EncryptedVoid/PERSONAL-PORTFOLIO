@@ -1,16 +1,20 @@
 import React from 'react';
-
 import { Greeting, Navbar, Footer, Skillset, Projects } from './containers';
-
 import './App.css';
 
 const App = () => (
   <div className="App">
-    <Navbar id="navbar"/>
-    <Greeting id="greeting"/>
-    <Skillset id="skills"/>
-    <Projects id="projects"/>
-    <Footer id="footer"/>
+    <Navbar />
+    <div id="greeting">
+      <Greeting />
+    </div>
+    <div id="skills">
+      <Skillset />
+    </div>
+    <div id="projects">
+      <Projects />
+    </div>
+    <Footer id="footer" />
   </div>
 );
 

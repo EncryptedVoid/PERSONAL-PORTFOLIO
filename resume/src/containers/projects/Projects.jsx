@@ -35,7 +35,7 @@ const Projects = () => {
     {
       name: 'To Do List react App',
       desc: 'Personal To Do List and Tasks Tracker',
-      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL', 'DALLE'],
       background: '/assets/to-do-list-webapp_banner.webp',
       link: 'https://github.com/EncryptedVoid/TO-DO-LIST-WEB-APP'
     },
@@ -49,16 +49,44 @@ const Projects = () => {
     {
       name: 'Alarm react App',
       desc: 'Personal Alarm App with Modern UI',
-      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
+      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL', 'DALLE'],
       background: '/assets/alarm-webapp_banner.webp',
       link: 'https://github.com/EncryptedVoid/ALARM-WEB-APP'
     },
     {
-      name: 'Fancy Sushi Buffet',
-      desc: 'Mock Website for a Sushi Buffet',
-      skills: ['REACT', 'CSS3', 'NODE.JS', 'GOOGLE MATERIAL'],
-      background: '/assets/sushi-restaurant_banner.webp',
-      link: 'https://github.com/EncryptedVoid/SUSHI-WEBSITE'
+      name: 'Daily Mini Projects',
+      desc: 'Short projects for mental practice',
+      skills: ['JAVA', 'C++', 'C', 'PYTHON'],
+      background: '/assets/daily_mini_project_banner.webp',
+      link: 'https://github.com/EncryptedVoid/DAILY_MINI_PROJECT'
+    },
+    {
+      name: '3D Portfolio Mockup',
+      desc: 'Mock Portfolio with 3D animations',
+      skills: ['REACT', 'CSS3', 'THREE.JS'],
+      background: '/assets/3D_portfolio_banner.webp',
+      link: 'https://github.com/EncryptedVoid/3D-PORTFOLIO-MOCKUP'
+    },
+    {
+      name: 'Mock Login Page',
+      desc: 'Practice Login Forms',
+      skills: ['HTML5', 'CSS3', 'DALLE'],
+      background: '/assets/login_page_project_banner.webp',
+      link: 'https://github.com/EncryptedVoid/LOGIN-PAGE'
+    },
+    {
+      name: 'Dreamscape Gardens',
+      desc: 'Mock Landscaping Business Website',
+      skills: ['HTML5', 'CSS3', 'DALLE'],
+      background: '/assets/dreamscape_gardens_banner.webp',
+      link: 'https://github.com/EncryptedVoid/Dreamscape-Gardens'
+    },
+    {
+      name: 'WalkForWenjack Leaderboard',
+      desc: 'Leaderboard for Tracking Fundraising',
+      skills: ['HTML5', 'CSS3'],
+      background: '/assets/walkforwenjack_banner.webp',
+      link: 'https://github.com/EncryptedVoid/WalkForWenjack.github.io'
     }
   ];
   

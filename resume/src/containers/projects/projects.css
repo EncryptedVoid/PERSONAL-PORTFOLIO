@@ -6,6 +6,7 @@
   padding-bottom: 2rem;
   border-radius: 2rem;
   background-color: #1d1e24;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .project-container__title {
@@ -13,12 +14,11 @@
   justify-self: center;
   color: white;
   font-weight: 800;
-  letter-spacing: 2rem;
+  letter-spacing: 3rem;
   line-height: 2rem;
 
   font-size: 3rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0 2.5rem 0;
 
   text-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
