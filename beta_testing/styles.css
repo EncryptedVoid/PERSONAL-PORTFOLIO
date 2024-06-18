@@ -1,0 +1,27 @@
+.greating_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #1d1e24;
+  border-radius: 1rem;
+  align-items: flex-end; /* Aligns items to the bottom */
+}
+
+.greating_container div {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start; /* Aligns text to the left */
+  justify-content: flex-end; /* Aligns text to the bottom */
+  border: whitesmoke 0.3rem solid;
+  color: whitesmoke;
+  text-shadow: 5px 5px 10px black;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
