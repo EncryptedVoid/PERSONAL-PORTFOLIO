@@ -8,7 +8,7 @@
   align-items: flex-start;
 }
 
-.Navbar button {
+.Navbar .navigation-button {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
@@ -30,11 +30,28 @@
   border: none;
 }
 
-.Navbar button h3 {
+.Navbar .contact-button {
+  background: linear-gradient(rgb(90, 0, 26), rgb(147, 0, 42), rgb(170, 0, 48));
+  border-radius: 0.5rem;
+
+  color: whitesmoke;
+
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  height: 4rem;
+
+  padding: 0.75rem;
+
+  border: none;
+}
+
+.Navbar .navigation-button h3 {
   font-weight: 500;
 }
 
-.Navbar button span img {
+.Navbar .navigation-button span img {
   background-color: rgb(53, 0, 13);
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -46,6 +63,14 @@
   align-items: center;
 }
 
+.Navbar .contact-button span img {
+  width: 2.25rem; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+
+  justify-content: center;
+  align-items: center;
+}
+
 .Navbar button:hover {
-  box-shadow: 0.3rem 0.3rem 0.25rem 0.25rem rgba(242, 59, 105, 0.4);
+  background: linear-gradient(rgb(67, 0, 18), rgb(88, 0, 25), rgb(122, 0, 35));
 }

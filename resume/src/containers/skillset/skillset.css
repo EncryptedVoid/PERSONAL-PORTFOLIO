@@ -1,94 +1,106 @@
 .skillset {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    to right,
-    rgb(238, 35, 76) 0%,
-    rgb(127, 26, 222) 50%,
-    rgb(17, 130, 235) 100%
-  );
+  background: #1d1e24;
   padding: 1.5rem;
   border-radius: 2rem;
   margin: 2rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.skillset__legend {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-self: flex-start;
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.skillset__legend-item {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: auto;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
+  filter: grayscale(100%);
+  border: 0.15rem whitesmoke solid;
+}
+
+.skillset__legend-item:hover {
+  filter: grayscale(0%);
 }
 
 .skillset__title {
   align-self: center;
-  justify-self: center;
-  color: white;
   font-weight: 800;
-  letter-spacing: 2rem;
-  line-height: 2rem;
-
+  letter-spacing: 0.2rem;
   font-size: 3rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.skillset__category-title {
-  display: flex;
-  justify-content: center;
-  color: rgb(0, 19, 53);
-  font-weight: 800;
-  letter-spacing: 1rem;
-  line-height: 1rem;
-  background-color: rgb(230, 249, 255);
-  border-radius: 0.75rem;
-  padding: 0.75rem 1rem;
-  margin: 0.75rem 0;
+  margin: 0 0 1.3rem 0;
+  text-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .skillset__list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
   padding: 0;
   margin: 0;
   list-style: none;
-  gap: 1rem;
 }
 
-.skillset__list-item {
+.skillset__item {
   display: flex;
   align-items: center;
-  background: linear-gradient(rgb(9, 0, 62), rgb(27, 0, 57));
-  padding: 0.5rem;
   color: white;
   border-radius: 0.5rem;
   font-weight: 600;
   font-size: 1.25rem;
-  box-sizing: border-box;
   justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: auto;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.frontend {
+  background: linear-gradient(27deg, #0011d0, #008dc0);
+}
+
+.aiml {
+  background: linear-gradient(27deg, #3a0081, #7b00b0);
+}
+
+.robotics {
+  background: linear-gradient(27deg, #00634b, #00a0a6);
+}
+
+.misc {
+  background: linear-gradient(27deg, #9a012f, rgb(205, 0, 140));
 }
 
 .skillset__icon {
-  margin-right: 0.5rem;
-  width: fit-content;
+  width: auto;
   height: 2rem;
-  flex-shrink: 0;
+  background-color: whitesmoke;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
 
-.skillset__text {
+.skillset__label {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.skillset-grouping {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
-  width: inherit;
-}
-
-.skillset-grouping li {
-  flex: 1;
-  list-style-type: none;
-}
-
-.SkillBlock {
-  margin: 3rem 0 3rem 0;
-  height: fit-content;
-  width: fit-content;
 }

@@ -3,8 +3,9 @@
   flex-direction: column;
   margin: 2rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   border-radius: 2rem;
-  background: linear-gradient(rgb(86, 29, 185), rgb(11, 119, 136));
+  background-color: #1d1e24;
 }
 
 .project-container__title {
@@ -18,6 +19,8 @@
   font-size: 3rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
+
+  text-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .project-container__card-deck {
