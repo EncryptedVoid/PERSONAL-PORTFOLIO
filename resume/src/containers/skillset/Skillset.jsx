@@ -45,6 +45,7 @@ const miscSkills = [
   { imgSrc: 'assets/france_logo.png', label: 'FRENCH', link: 'https://en.wikipedia.org/wiki/French_language' },
   { imgSrc: 'assets/bangladesh_logo.png', label: 'BENGALI', link: 'https://en.wikipedia.org/wiki/Bengali_language' },
 ];
+
 const Skill = ({ imgSrc, altText, label, link, category }) => (
   <li className={`skillset__item ${category}`} onClick={() => window.location.href = link}>
     <img src={imgSrc} alt={altText} loading="lazy" className="skillset__icon" />
